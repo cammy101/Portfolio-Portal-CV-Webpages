@@ -1,0 +1,129 @@
+body
+{
+  background: #9DA9B3;
+}
+
+.mySlides {display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.center-bubble
+{
+text-align: center;
+border-radius: 25px;
+background-color: #E7DFDD;
+padding: 20px;
+margin: 0px;
+}
+
+.image-style {
+    outline: transparent solid 1px;
+    width: 270px;
+    height: 269px;
+    object-fit: cover;
+}
+
+.Box
+{
+  margin: 10%
+  auto 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #D17B34;
+  border-radius: 4px;
+  max-width: 800px;
+  box-shadow:  0 5px 15px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+.imgBx
+{
+  flex: 0 0 150px;
+}
+
+.txtBx h1
+{
+  margin: : 0;
+  padding-left: 10px;
+  color: #4D5B66;
+}
+
+.txtBx h3
+{
+  margin: : 0;
+  padding-left: 10px;
+  color: #4D5B66;
+}
+
+.txtBx p
+{
+  margin: : 0;
+  padding-left: 10px;
+  color: #4D5B66;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li a {
+  padding: 0px;
+}
+
+#buttons{
+    float:right;
+    position:relative;
+    left:-50%;
+    text-align:left;
+}
+
+#buttons ul{
+    list-style:none;
+    position:relative;
+    left:50%;
+    text-decoration:none;
+    margin:0px;
+    background:#4D5B66;
+    float:left;
+    color:#fff;
+    padding:0px 200px;
+}
+
+#buttons li{
+  float:left;
+  position:relative;
+}
+
+#buttons a{
+    text-decoration:none;
+    margin:1px;
+    background:#4D5B66;
+    float:left;
+    color:#9DA9B3;
+    text-align:center;
+    white-space:nowrap;
+}
+#buttons a:hover{color:red;}
+#content{overflow:hidden}/* hide horizontal scrollbar*/
