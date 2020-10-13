@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/Portal-Style.css">
 </head>
 
-<nav>
+<nav class="navbar">
   <a href="#header">Top</a>
   <a href="#About-me">About me</a>
   <a href="#Skills">Skills</a>
@@ -81,13 +81,17 @@ Main interests lie in games design and front end web design and development. </p
   <div class="left-half">
     <article class="Splitarticle">
       <h1>Left Half</h1>
+      <div class="slide-left">
       <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+    </div>
     </article>
   </div>
   <div class="right-half">
     <article class="Splitarticle">
       <h1>Right Half</h1>
+      <div class="slide-right">
       <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+    </div>
     </article>
   </div>
 </section>
@@ -102,7 +106,20 @@ Main interests lie in games design and front end web design and development. </p
 <div id="Contact">
 </div>
 
+<script>
+window.onscroll = function() {stickFunction()};
 
+var navbar = document.getElementsByClassName("navbar")[0];
+var sticky = navbar.offsetTop;
+
+function stickFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 <!-- <div>
 

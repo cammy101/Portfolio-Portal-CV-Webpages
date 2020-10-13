@@ -3,6 +3,68 @@ body
   background: white;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #4D5B66;
+  color: black;
+}
+
+.navbar a:active {
+  background-color: #D17B34;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.slide-left {
+	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+.slide-right {
+	animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+
 .header {
   background: #9DA9B3;
   padding: 10px;
@@ -39,25 +101,6 @@ body
   transform: translate(-50%, -50%);
   width: 100%;
   padding: 20px;
-}
-
-.split {
-  height: 50%;
-  width: 50%;
-  position: inherit;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 50px;
-}
-
-.left {
-  left: 0;
-  background-color: #9DA9B3;
-}
-
-.right {
-  background-color: #red;
 }
 
 .centered {
