@@ -2,52 +2,124 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="Portal-Style.css">
+<link rel="stylesheet" type="text/css" href="CSS/Portal-Style.css">
 </head>
 
-<body>
+<nav class="navbar">
+  <a href="#header">Top</a>
+  <a href="#About-me">About me</a>
+  <a href="#Skills">Skills</a>
+  <a href="#Education">Education</a>
+  <a href="#Experience">Experience</a>
+</nav>
 
+<header class="header" id="header">
 <div class="Box">
-
   <div class="imgBx">
-
-  <img class="image-style" src="Cam.jpg">
-
+  <img class="image-style" src="Images/Cam.jpg">
   </div>
-
 <div class="txtBx">
-
 <title>Cameron Portfolio Portal</title>
-
 <h1> Cameron Khan </h1>
 <h3> Greenthumbed Web Developer, Games Programmer & Designer and Artist. </h3>
-
 <p><b> Mobile Number: </b> <br/>
   #######
 </p>
-
 <p><b> Email: </b> <br/>
  cammy.khan@hotmail.com</p>
-
 </div>
 </div>
+</header>
 
+<div class="section2" id="About-me">
+<nav>
 <div id="buttons">
 <ul>
  <li><a href="default.asp">
-   <img alt="Github logo" src="github_PNG20.png" width="75" height="75">
+   <img alt="Github logo" src="Images/github_PNG20.png" width="75" height="75">
  </a></li>
  <li><a href="news.asp">
-   <img alt="Linkedin logo" src="index.png" width="75" height="75">
+   <img alt="Linkedin logo" src="Images/index.png" width="75" height="75">
  </a></li>
  <li><a href="news.asp">
-   <img alt="Artstation logo" src="artstation.png" width="75" height="75">
+   <img alt="Artstation logo" src="Images/artstation.png" width="75" height="75">
  </a></li>
  <li><a href="news.asp">
-   <img alt="Cameron logo" src="Cam.png" width="75" height="75">
+   <img alt="Cameron logo" src="Images/Cam.png" width="75" height="75">
  </a></li>
 </ul>
 </div>
+</nav>
+
+<div class="centered">
+<section>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1> About me </h1>
+<p class="p"> Greenthumbed games designer & programmer,
+front end web developer and artist with experience in several programming languages & IDE's and art and modeling software.
+Main interests lie in games design and front end web design and development. </p>
+<section>
+</div>
+</div>
+
+<!-- <div>
+<section id="Skills">
+<h1> Skills </h1>
+<article class="split left">
+</article>
+<article class="split right">
+</article>
+</section>
+</div> -->
+
+<section class="Splitcontainer centered">
+  <h1>Skills</h1>
+  <div class="left-half">
+    <article class="Splitarticle">
+      <h1>Left Half</h1>
+      <div class="slide-left">
+      <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+    </div>
+    </article>
+  </div>
+  <div class="right-half">
+    <article class="Splitarticle">
+      <h1>Right Half</h1>
+      <div class="slide-right">
+      <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
+    </div>
+    </article>
+  </div>
+</section>
+
+
+<div id="Education">
+</div>
+
+<div id="Experience">
+</div>
+
+<div id="Contact">
+</div>
+
+<script>
+window.onscroll = function() {stickFunction()};
+
+var navbar = document.getElementsByClassName("navbar")[0];
+var sticky = navbar.offsetTop;
+
+function stickFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 <!-- <div>
 

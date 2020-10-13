@@ -1,32 +1,115 @@
 body
 {
+  background: white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #4D5B66;
+  color: black;
+}
+
+.navbar a:active {
+  background-color: #D17B34;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.slide-left {
+	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+.slide-right {
+	animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+
+.header {
   background: #9DA9B3;
+  padding: 10px;
+}
+
+.section2
+{
+  background: #DFD5CD
+}
+
+.Splitcontainer {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+  background-color: #ff9e2c;
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+
+.right-half {
+  background-color: #b6701e;
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
+.Splitarticle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+}
+
+.centered {
+  text-align: center;
 }
 
 .mySlides {display: block;
 margin-left: auto;
 margin-right: auto;
-}
-
-.flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-
-.center-bubble
-{
-text-align: center;
-border-radius: 25px;
-background-color: #E7DFDD;
-padding: 20px;
-margin: 0px;
 }
 
 .image-style {
@@ -38,7 +121,7 @@ margin: 0px;
 
 .Box
 {
-  margin: 10%
+  margin: 5%
   auto 0;
   padding: 20px;
   box-sizing: border-box;
