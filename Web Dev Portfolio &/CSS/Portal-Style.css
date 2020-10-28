@@ -4,7 +4,82 @@ body
 }
 
 * {
-  box-sizing: border-box-box;
+  box-sizing: border-box;
+}
+
+.Splitcontainer {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.centered {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-gap: 0 5px;
+  grid-template-columns: 1fr 6px 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.left-half,
+.right-half {
+  margin-bottom: 5px;
+}
+
+.left-half {
+  background-color: #ff9e2c;
+}
+
+.right-half {
+  background-color: #b6701e;
+}
+
+.Splitarticle {
+  width: 100%;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.grid > div {
+  padding: 1rem;
+  background-color: #D17B34;
+  color: #ffffff;
+}
+
+.centeredSplit {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 0px;
+  width: 100%;
+  align-items: center;
+}
+
+.centered--fullwidth {
+  grid-column: 1 / -1;
+  padding: 0 20px;
+  width: 50%;
+}
+
+.vl {
+  border-left: 6px solid black;
+}
+
+hr.solid {
+  border-bottom: none;
+  border-top: 6px solid black;
+  grid-column: 1 / -1;
+  margin: 0;
+  width: 100%;
 }
 
 .row::after {
@@ -39,18 +114,6 @@ body
   background-color: #D17B34;
   color: #ffffff;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 1.5rem;
-}
-.grid > div {
-  padding: 1rem;
-  background-color: #D17B34;
-  color: #ffffff;
-}
-
 
 .flex-container {
   display: flex;
@@ -103,9 +166,11 @@ body
 }
 
 .sticky {
-  position: fixed;
+  position: sticky;
+  margin-left: 0px;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .slide-left {
@@ -145,46 +210,11 @@ body
   background: #DFD5CD
 }
 
-.Splitcontainer {
-  display: table;
-  width: 100%;
-}
-
-.left-half {
-  background-color: #ff9e2c;
-  position: absolute;
-  left: 0px;
-  width: 50%;
-}
-
-.right-half {
-  background-color: #b6701e;
-  position: absolute;
-  right: 0px;
-  width: 50%;
-}
-
-.Splitarticle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 20px;
-}
-
 .centered {
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
   width: 500px;
-}
-
-.centeredSplit {
-  text-align: center;
-  margin: auto;
-  padding-bottom: 0px;
-  width: 400px;
 }
 
 .AboutMe {
@@ -259,14 +289,15 @@ li a {
   padding: 0px;
 }
 
-#buttons{
+.buttons{
     float:right;
     position:relative;
     left:-50%;
     text-align:left;
+    z-index: 0;
 }
 
-#buttons ul{
+.buttons ul{
     list-style:none;
     position:relative;
     left:50%;
@@ -278,12 +309,12 @@ li a {
     padding:0px 200px;
 }
 
-#buttons li{
+.buttons li{
   float:left;
   position:relative;
 }
 
-#buttons a{
+.buttons a{
     text-decoration:none;
     margin:1px;
     background:#4D5B66;
@@ -292,5 +323,5 @@ li a {
     text-align:center;
     white-space:nowrap;
 }
-#buttons a:hover{color:red;}
+.buttons a:hover{color:red;}
 #content{overflow:hidden}/* hide horizontal scrollbar*/
